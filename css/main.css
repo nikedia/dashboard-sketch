@@ -1,0 +1,281 @@
+/*--------------  Estilos Generales--------------  */
+ 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(http://www.novasaludsa.cl/wp-content/uploads/2017/10/Abstract-Background-White.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350vh;
+    width: 100%;
+    /* background: linear-gradient( transparent, #ffc107); */
+    /* background: linear-gradient(to top right, rgba(255,0,0,0), rgb(255,193,7)); */
+    /* background: repeating-radial-gradient(circle at 0 0, #eee, rgb(255,193,7) 5px); */
+    /* opacity: 0.9;  */
+    /* filter: alpha(opacity=90);   */
+    background-color: rgb(220,220,220);  
+    background-blend-mode: hard-light; 
+    /* background-blend-mode: multiply; */
+ 
+       
+}
+/*--------------  Estilos reusables--------------  */
+body>section {
+    /* background-color: rgb(202, 39, 39); */
+    margin: 0 2% ;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+
+.upper-case {
+    text-transform: uppercase;
+}
+
+div.inline-block { /*estilo chart box */
+    width: 30%;
+    height: 45vh;
+    display: inline-block;
+    padding: 0 2px;
+       
+}
+
+/*--------------  Header--------------  */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+#nav1 {
+    text-align: center;
+    vertical-align: middle;
+    background-image: url(http://www.novasaludsa.cl/wp-content/uploads/2017/10/Abstract-Background-White.jpg);
+    width: 100%;
+}
+
+#logo {
+    width: 15%;
+    display: inline-block;
+}
+
+span#bars-icon {
+    display: inline-block;
+    font-size: 30px;
+    position: relative;
+    left: 35%;
+    transform: translateY(-75%);
+}
+
+#nav2 , header>div {
+    background-color: #F7F7F7;
+    font-family: 'Archivo Black', sans-serif;
+
+}
+
+header div #office-name {
+    display: inline-block;
+    /*margin-left: 5%;*/
+    padding: 1% 2%;
+    font-size: 25px;
+}
+
+#nav2 ul {
+    margin-left: 2.9%;
+
+}
+#nav2 li {
+    display: inline-block;
+    padding: 1% 2%;
+    font-size: 18px;
+}
+
+/*-------------- Sections--------------  */
+
+/* main-container */
+#main-container {
+    position: absolute;
+    top: 30%;
+    /* background-color: greenyellow; */
+    overflow: hidden;
+    clear: both;
+    
+}
+
+.align-top {
+  /* position: absolute;
+  overflow: hidden;
+  clear: both; */
+  vertical-align: top;
+ 
+}
+
+#enrollment-achievement-nps, #skills {
+    /* outline: 1px solid rgb(44, 6, 211); */
+    overflow: hidden;
+    clear: both;
+    /* position: block; */
+    padding-top: 5%;
+    display: block;
+    padding-left: 5%;
+    height: auto;
+    
+    
+}
+
+#skills div {
+    height: 100vh;
+}
+
+ /* Estilos de los charts de información */
+ .box-chart-info {
+    /* outline: 1px solid red; */
+    border-radius: 5px;
+    /* transform: translateX(15%); */
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    
+    
+ }
+
+ div.inline-block>span , #skills>div>span{ /*titulos charts*/
+    /* outline: 1px solid purple; */
+    display: block;
+    font-family: 'Archivo Black', sans-serif;
+    /* position: relative; */
+    /* top: 2%; */
+    left: 5%;
+    padding: 2% 2%;
+}
+
+
+
+P { /*texto informativo charts*/
+    /* outline: 1px solid yellow; */
+    background-color: #e1e1e1;
+    color: #000;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    display: inline-block;
+    height: auto;
+    overflow: visible;
+    width: 40%;
+    border-radius: 5px;
+    opacity: .6;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    left: 10%;
+    border-radius: 5px;
+
+    /* margin: 0 auto; */
+    
+}
+
+p>.number-format, p>.number-percentage-format  {
+    display: block;
+    font-size: 18px;
+    font-weight: bold 1700;
+    padding: 2% 0;
+    font-family: 'Archivo Black', sans-serif;
+
+    
+}
+
+#caret-up-icon { /* icono formato */
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+span>.nps-opinions-format {
+    display: block;
+    
+}
+
+.opinion-nps-format {
+    font-size: 14px;
+}
+
+.p-skills-format {
+    width: 199px;
+    left: 0;
+}
+
+/* Estilos de la lista desplegable */
+#list-promotions {
+    background-color: #ffc107;
+    position: absolute;
+    width: 19%;
+    z-index: 999;
+}
+
+#list-promotions>li {
+    padding: 5%;
+    padding-left: 10%;
+    padding-bottom: 2.5%;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+#list-promotions>ul li {
+    padding: .5% 0;
+    padding-left: 12%;
+ }
+
+ #list-promotions>ul li:hover {
+     background-color: black;
+     color: white;
+ }
+
+ /* Estilos de las imágenes de referencia - BORRAR luego */
+ .img-reference1-delete {
+    width: 70%;
+    padding-top: 5%;
+    /* /* padding-right: 10px;  */
+    transform: translateX(20%);
+    vertical-align: bottom;
+    /* margin-left: 10px; */
+    /* margin-right: 10px; */
+    /* margin-top: 10%; */
+    
+ }
+
+ figure {
+     /* outline: 1px solid red; */
+     display: block;
+     position: relative;
+     top: 40px;
+     vertical-align: middle;
+ }
+ .img-reference2a-delete {
+    width: 60%;
+    box-sizing: border-box;
+ }
+
+ .img-reference2b-delete {
+    width: 30%;
+    padding-top: 20px;
+    padding-left: 70px;
+    box-sizing: border-box;
+    transform: translateY(-25%);
+    
+ }
